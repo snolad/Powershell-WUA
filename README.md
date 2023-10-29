@@ -11,11 +11,14 @@ Use this Powershell module to exploit Windows Update Agent Win32 API on your Win
 ## Search-MissingUpdatesOnline()
 ```powershell
 Search-MissingUpdatesOnline -UpdateService MicrosoftUpdate -UpdateCategory CriticalUpdates
+```
 
 ## Search-MissingUpdatesOffline()
 ```powershell
 Search-MissingUpdatesOffline -ServiceId 'xxxxxxxxxx'
+```
 
 ## Install-Updates()
 ```powershell
 Install-Updates -MissingUpdatesCollection $missingUpdates
+```
