@@ -14,6 +14,7 @@ To install this module, use the following command :
 
 ```powershell
 Install-Module ".\PSWindowsUpdateAgent.psm1"
+```
 
 ## Search-MissingUpdatesOnline()
 ```powershell
@@ -22,25 +23,25 @@ Search-MissingUpdatesOnline -UpdateService MicrosoftUpdate -UpdateCategory Criti
 
 ## Search-MissingUpdatesOffline()
 ```powershell
-Search-MissingUpdatesOffline -ServiceId 'xxxxxxxxxx'
+Search-MissingUpdatesOffline -ServiceId 'ServiceId'
 ```
 
 ## Install-Updates()
 ```powershell
-Install-Updates -MissingUpdatesCollection $missingUpdates
+Install-Updates -MissingUpdatesCollection $yourMissingUpdates
 ```
 
 ## Register-OfflineUpdateService()
 ```powershell
-Register-OfflineUpdateService -OfflineCatalogPath "c:\temp\wsusscn2.cab"
+Register-OfflineUpdateService -OfflineCatalogPath "YourPath\wsusscn2.cab"
 ```
 
 ## Get-OfflineCatalogFromInternet()
 ```powershell
-Get-OfflineCatalogFromInternet -DestinationFolderPath "c:\temp"
+Get-OfflineCatalogFromInternet -DestinationFolderPath "YourPath"
 ```
 
 ## Remove-UpdateService()
 ```powershell
-Remove-UpdateService -ServiceId 'xxxxxxxxxxxxxxxxxxxxxx'
+Remove-UpdateService -ServiceId 'ServiceId'
 ```
