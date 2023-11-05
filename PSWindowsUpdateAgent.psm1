@@ -1,13 +1,26 @@
-<#	
-	.NOTES
-	===========================================================================
-	 Created on:   	24/10/2023
-	 Created by:   	Steeve DADON
-	 Filename: 		PSWindowsUpdateAgent.psm1
-	 Version: 		1.0
-	===========================================================================
-	.DESCRIPTION
-		Powershell module for searching and installing Windows Updates
+<#PSScriptInfo
+
+.NOTES 
+	Version: 1.0.0
+	Date : 2023-10-01
+	Author: Steeve DADON
+	Licence: MIT
+
+.DESCRIPTION
+Powershell module for searching and installing Windows Updates
+
+.GUID 9b0c3246-6ad9-496c-98ca-861201579fe5
+
+.AUTHOR Steeve DADON
+
+.COPYRIGHT (c) 2023 Steeve DADON
+
+.LICENSEURI https://github.com/snolad/Powershell-WUA/blob/main/LICENCE
+
+.PROJECTURI https://github.com/snolad/Powershell-WUA/
+
+.RELEASENOTES
+
 #>
 
 function Get-OfflineCatalogFromInternet
@@ -193,7 +206,7 @@ function Search-MissingUpdatesOnline
 {
 	<#
 		.SYNOPSIS
-		Search missing (not installed) updates on the computer using a specified online service with the Windows Update Agent.
+		Search missing (not installed) updates on the computer using a specified online service with the Windows Update Agent, and by update category.
 
 		.PARAMETER -UpdateService
 		System.String
@@ -312,7 +325,7 @@ function Search-MissingUpdatesOffline
 		Specify a category of update accoding to the list of choices, by default the search is made with all categories.
 
 		.EXAMPLE
-		Search-MissingUpdatesOnline -UpdateService MicrosoftUpdate -UpdateCategory CriticalUpdates
+		Search-MissingUpdatesOffline -ServiceId 'xxxxxxxxxx'
 
 		.OUTPUTS
 		Object[]
