@@ -8,6 +8,13 @@ Use this Powershell module to exploit Windows Update Agent Win32 API on your Win
 * Register a Microsoft Update Service for offline scan using your offline catalog cab file.
 * Download from Intenet the last up-to-date version of the Microsoft offline catalog, required for offline scan.
 
+## Installation
+
+To install this module, use the following command :
+
+```powershell
+Install-Module ".\PSWindowsUpdateAgent.psm1"
+
 ## Search-MissingUpdatesOnline()
 ```powershell
 Search-MissingUpdatesOnline -UpdateService MicrosoftUpdate -UpdateCategory CriticalUpdates
