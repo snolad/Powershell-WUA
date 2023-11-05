@@ -22,3 +22,18 @@ Search-MissingUpdatesOffline -ServiceId 'xxxxxxxxxx'
 ```powershell
 Install-Updates -MissingUpdatesCollection $missingUpdates
 ```
+
+## Register-OfflineUpdateService()
+```powershell
+Register-OfflineUpdateService -OfflineCatalogPath "c:\temp\wsusscn2.cab"
+```
+
+## Get-OfflineCatalogFromInternet()
+```powershell
+Get-OfflineCatalogFromInternet -DestinationFolderPath "c:\temp"
+```
+
+## Remove-UpdateService()
+```powershell
+Remove-UpdateService -ServiceId 'xxxxxxxxxxxxxxxxxxxxxx'
+```
