@@ -45,3 +45,6 @@ Get-OfflineCatalogFromInternet -DestinationFolderPath "YourPath"
 ```powershell
 Remove-UpdateService -ServiceId 'ServiceId'
 ```
+
+## License & Contributing
+The PSWindowsUpdateAgent module is licensed under MIT. Any contributions highly appreciated!
